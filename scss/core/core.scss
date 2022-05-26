@@ -1,0 +1,265 @@
+$brown:#E7D0BA;
+$grey-violet:#666390;
+$violet:#5749AB;
+$dark-violet:#3B366E;
+$dark:#0A044A;
+
+* {
+  outline: none;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+textarea,
+input[type="text"],
+input[type="button"],
+input[type="email"],
+input[type="submit"] {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+html {
+  // scroll-behavior: smooth;
+  // -webkit-overflow-scrolling: touch;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  color: #fff;
+  position: relative;
+
+}
+
+button,
+input,
+textarea {
+  border: 0;
+  background: none;
+  -webkit-appearance: none;
+}
+
+button {
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+h4 {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 52px;
+  color: #0A044A;
+  margin-bottom: 10px;
+  margin-top: 50px;
+}
+
+p {
+  font-family: "Campton Book";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  color: $dark-violet;
+  margin-bottom: 48px;
+}
+
+p.line {
+  position: relative;
+  font-family: "Campton Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: $violet;
+  padding-left: 30px;
+  margin-bottom: 50px;
+}
+
+p.line:before {
+  content: '';
+  width: 3px;
+  height: 100%;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #E7D0BA;
+}
+
+ol,
+ul {
+  margin-bottom: 30px;
+  padding-left: 50px;
+}
+
+ol>li {
+  position: relative;
+  list-style: decimal;
+  color: $violet;
+  font-family: "Campton Book";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 40px;
+}
+
+ol>li>span {
+  color: #172A3F;
+  font-family: 'Inter', sans-serif;
+  font-weight: normal;
+  padding-left: 16px;
+}
+
+ul>li {
+  position: relative;
+  list-style: none;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 40px;
+  color: #172A3F;
+}
+
+ul>li:before {
+  content: "\2022";
+  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: $brown;
+  /* Change the color */
+  font-weight: bold;
+  /* If you want it to be bold */
+  display: inline-block;
+  /* Needed to add space between the bullet and the text */
+  width: 1em;
+  /* Also needed for space (tweak if needed) */
+  margin-left: -1em;
+  /* Also needed for space (tweak if needed) */
+  font-size: 24px;
+  position: relative;
+  top: 1px;
+}
+
+h5 {
+  font-family: "Campton Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #0A044A;
+  margin-bottom: 15px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  transition: 0.3s;
+  z-index: 1;
+}
+
+a:not(.link-button):hover {
+  transition: 0.3s;
+  color: $brown;
+}
+
+.container {
+  max-width: 1480px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.inner-container {
+  padding: 6.1vw 4.5vw 7.2vw;
+}
+
+.content-container {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+.title.dark-border {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #666390;
+  color: transparent;
+}
+
+.light-border {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #FFFFFF;
+}
+
+.small-radius {
+  border-radius: 8px;
+}
+
+.big-radius {
+  border-radius: 12px;
+}
+
+.title {
+  font-size: 64px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 84px;
+  color: $dark-violet;
+}
+
+
+
+
+.link-button {
+  display: inline-block;
+  width: 280px;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  font-family: 'Campton Medium';
+  font-weight: 500;
+  font-size: 24px;
+  background: #fff;
+  z-index: 1;
+  position: relative;
+}
+
+.brown {
+  background: $brown;
+}
+
+.dark {
+  color: $dark;
+}
+
+.dark-bg {
+  background: $dark;
+}
+
+.violet {
+  background: $violet;
+}
+
+.half-part {
+  width: 50%;
+}
+
+section {
+  padding: 50px 0;
+}

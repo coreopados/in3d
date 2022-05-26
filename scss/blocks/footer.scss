@@ -1,0 +1,206 @@
+footer {
+    // background: $dark;
+    background: #332E63;
+    position: relative;
+    overflow: hidden;
+
+    .foot-mask {
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        object-fit: cover;
+    }
+
+    #contacts {
+        padding: 6.3vw 4.5vw 5vw;
+
+        .title {
+            color: #fff;
+        }
+
+        .wrap-foot {
+            display: flex;
+            position: relative;
+            z-index: 1;
+            margin-bottom: 8.3vw;
+
+            .right-part {
+                form {
+                    display: flex;
+                    flex-direction: column;
+
+                    label {
+                        width: 100%;
+                        position: relative;
+                    }
+
+                    textarea,
+                    input:not([type="submit"]) {
+                        background: transparent;
+                        height: 70px;
+                        border-bottom: 2px solid #666390;
+                        font-family: "Campton Medium";
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 24px;
+                        width: 100%;
+                        color: #fff;
+                        margin-bottom: 20px;
+
+                    }
+
+                    input:-webkit-autofill,
+                    input:-webkit-autofill:hover,
+                    input:-webkit-autofill:focus input:-webkit-autofill,
+                    textarea:-webkit-autofill,
+                    textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus,
+                    select:-webkit-autofill,
+                    select:-webkit-autofill:hover,
+                    select:-webkit-autofill:focus {
+                        border-bottom: 2px solid #666390;
+
+                        -webkit-text-fill-color: #fff;
+                        -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+                        transition: background-color 5000s ease-in-out 0s;
+                        background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(0, 174, 255, 0.04) 50%, rgba(255, 255, 255, 0) 51%, rgba(0, 174, 255, 0.03) 100%);
+                    }
+
+                    textarea {
+                        min-height: 70px;
+                        resize: none;
+                        padding-top: 15px;
+                    }
+
+                    textarea.error-field,
+                    input:not([type="submit"]).error-field {
+                        border-bottom: 2px solid #FF5C5C;
+                    }
+
+                    textarea::placeholder,
+                    input:not([type="submit"])::placeholder {
+                        color: #fff;
+                    }
+
+                    .error-note {
+                        position: absolute;
+                        bottom: -8px;
+                        color: #FF5C5C;
+                        display: none;
+                        margin-bottom: 0;
+                        line-height: unset;
+                    }
+
+                    textarea.error-field+.error-note,
+                    input:not([type="submit"]).error-field+.error-note {
+                        display: block;
+                    }
+
+                    input[type='submit'] {
+                        font-family: "Campton Medium";
+                        margin-top: 60px;
+                        font-size: 24px;
+                        background: #E7D0BA;
+                        color: #172A3F;
+                        max-width: 320px;
+                        height: 70px;
+                        cursor: pointer;
+                        border-radius: 8px;
+                    }
+                }
+            }
+        }
+
+        .copyright {
+            position: relative;
+            z-index: 1;
+            display: flex;
+
+            a {
+                font-family: 'Campton Book';
+            }
+
+            .left-part {
+                display: flex;
+                justify-content: space-between;
+                padding-right: 7vw;
+
+                a {
+                    line-height: 40px;
+                    font-size: 16px;
+                    line-height: 40px;
+                }
+
+                .logo-wrap {
+                    img {
+                        position: relative;
+                        left: -8px;
+                        width: 88px;
+                        top: 8px;
+                    }
+
+                    p {
+                        font-family: "Campton Medium";
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 10px;
+                        line-height: 20px;
+                        color: #807DA5;
+                        margin-bottom: 0;
+                    }
+                }
+
+                .one-link,
+                .two-links {
+                    display: flex;
+                    flex-direction: column;
+                }
+
+            }
+
+            .right-part {
+                display: flex;
+                justify-content: space-between;
+
+                .mail-img {
+                    line-height: 40px;
+                    font-size: 16px;
+                    line-height: 40px;
+
+                    img {
+                        position: relative;
+                        top: 7px;
+                        margin-right: 12px;
+                    }
+                }
+
+                .privacy {
+                    // padding-top: 15px;
+                    display: flex;
+                    flex-direction: column;
+
+                    p {
+                        text-align: right;
+                        margin-bottom: 0;
+
+                        a {
+                            font-family: "Campton Book";
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 12px;
+                            line-height: 20px;
+                            color: #807DA5;
+                        }
+
+                        a:hover {
+                            color: $brown
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
